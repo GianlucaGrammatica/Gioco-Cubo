@@ -36,8 +36,8 @@ if (localStorage.getItem('RaibowCrashScore')) {
 }
 
 /*First Random*/
-let CuurentX = Math.floor(Math.random() * (85 - 15) + 15);
-let Cuurenty = Math.floor(Math.random() * (85 - 40) + 40);
+let CuurentX = Math.floor(Math.random() * (80 - 20) + 20);
+let Cuurenty = Math.floor(Math.random() * (90 - 40) + 40);
 let Interval = 600;
 
 /*Gmae Begin*/
@@ -85,7 +85,7 @@ Menu.addEventListener('click', function () {
 
 /*Cube Move*/
 function IlLkeItMoveItMoveIt() {
-  CuurentX = Math.floor(Math.random() * (85 - 15) + 15);
+  CuurentX = Math.floor(Math.random() * (80 - 20) + 20);
   Cuurenty = Math.floor(Math.random() * (90 - 40) + 40);
   MaxClick = 0;
 
