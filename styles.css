@@ -1,0 +1,162 @@
+* {
+  transition: all 0.2s ease-in;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #ffd761;
+  background-image: linear-gradient(
+    to right,
+    #80e1f2,
+    #4ceced,
+    #1bf5d7,
+    #3dfcb2,
+    #76ff81,
+    #afed4c,
+    #dad71c,
+    #ffbd00,
+    #ff8949,
+    #ff5a8d,
+    #fd59d0,
+    #9475ff
+  );
+  font-family: 'Quicksand', Bold;
+  height: 95%;
+}
+
+/*Barra in alto*/
+nav {
+  height: 200px;
+  width: 60%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+  border: white dotted 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    border: white dotted 5px;
+  }
+}
+
+.Navv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Logo {
+  height: 100px;
+}
+
+.TimeAndScore {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.TimeAndScore h1 {
+  color: rgb(0, 0, 0);
+}
+
+/*Menu*/
+.Menu {
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+
+.Button {
+  padding: 20px 60px;
+  font-size: x-large;
+  font-family: 'Quicksand', Bold;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: white dotted 5px;
+}
+
+.Hover:hover {
+  opacity: 70%;
+  scale: 0.9;
+}
+
+.Hidden {
+  display: none;
+}
+
+/*Contenitore Gioco*/
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.GameCon {
+  margin: 30px;
+  width: 60%;
+  height: 75%;
+}
+
+@media screen and (max-width: 600px) {
+  .GameCon {
+    margin: 30px;
+    width: 80%;
+    height: 65%;
+  }
+}
+
+/*Cubo*/
+.Cubew {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  position: fixed;
+}
+
+.Cubew:active {
+  scale: 0.8;
+}
+
+/*Colori*/
+.White {
+  background-color: white;
+}
+
+.Violet {
+  background-color: #b49fff;
+}
+
+.Pink {
+  background-color: #ffa2e6;
+}
+
+.Blue {
+  background-color: #9df5f5;
+}
+
+.Green {
+  background-color: #caee91;
+}
+
+.Yellow {
+  background-color: #ecd28b;
+}
+
+.Red {
+  background-color: #ff8383;
+}
