@@ -28,7 +28,7 @@ let game = 0;
 let BestScore = 0;
 if (localStorage.getItem('RaibowCrashScore')) {
   BestScore = localStorage.getItem('RaibowCrashScore');
-  BestScoreText.innerText = 'Best Score: ' + BestScore;
+  BestScoreText.innerText = '✦ Best Score: ' + BestScore + ' ✦';
   BestScoreText.classList.remove('Hidden');
 } else {
   BestScoreText.innerText = 'Best Score: 000';
@@ -36,12 +36,12 @@ if (localStorage.getItem('RaibowCrashScore')) {
 }
 
 /*First Random*/
-let CuurentX = Math.floor(Math.random() * (80 - 20) + 20);
-let Cuurenty = Math.floor(Math.random() * (90 - 40) + 40);
+let CuurentX = Math.floor(Math.random() * (85 - 15) + 15);
+let Cuurenty = Math.floor(Math.random() * (85 - 40) + 40);
 let Interval = 600;
 
 /*Gmae Begin*/
-Menu.addEventListener('click', function () {
+Button.addEventListener('click', function () {
   game = 1;
   GameCon.classList.remove('Hidden');
   Menu.classList.add('Hidden');
@@ -85,7 +85,7 @@ Menu.addEventListener('click', function () {
 
 /*Cube Move*/
 function IlLkeItMoveItMoveIt() {
-  CuurentX = Math.floor(Math.random() * (80 - 20) + 20);
+  CuurentX = Math.floor(Math.random() * (85 - 15) + 15);
   Cuurenty = Math.floor(Math.random() * (90 - 40) + 40);
   MaxClick = 0;
 
@@ -115,7 +115,7 @@ function CountDownDown() {
 /*Cube Click*/
 Cube.addEventListener('click', function () {
   if (MaxClick < 1) {
-    MaxClick = MaxClick +1;
+    MaxClick = MaxClick + 1;
     if (SelecetColor == 'b49fff') {
       ScoreNum = ScoreNum + 10;
     } else {
@@ -143,8 +143,9 @@ Cube.addEventListener('click', function () {
 
   console.log(ScoreNum);
   Score.innerText = 'Score: ' + ScoreNum;
+  IlLkeItMoveItMoveIt();
   if (ScoreNum > BestScore) {
     localStorage.setItem('RaibowCrashScore', ScoreNum);
-    BestScoreText.innerText = 'Best Score: ' + ScoreNum;
+    BestScoreText.innerText = '✦ Best Score: ' + BestScore + ' ✦';
   }
 });
